@@ -1,0 +1,96 @@
+body {
+  background-color: #c0c2c9;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.5s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+//Change Header Text and Icon Size
+
+@media screen and (min-width: 600px) {
+  .headerText {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .headerText {
+    font-size: 1rem;
+  }
+  .OpenBars {
+    font-size: 1.5rem;
+  }
+}
+
+.myLogo {
+  width: 5rem;
+}
+
+.gradientBG {
+  background-image: linear-gradient(
+    180deg,
+    rgba(8, 146, 208, 0.3),
+    rgba(8, 146, 208, 0.6)
+  );
+  padding: 1rem;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 139, 0.6),
+    1px 1px 1px rgba(0, 0, 0, 0.1) inset;
+}
+
+.OpenBars {
+  font-size: 2rem;
+  text-shadow: 2px 2px #000;
+  cursor: pointer;
+  color: #fff;
+}
+
+.headerText {
+  position: relative;
+  top: 0.5rem;
+  padding: 0.5rem;
+  color: #fff;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-wieght: bold;
+  text-shadow: 2px 2px #000;
+}
