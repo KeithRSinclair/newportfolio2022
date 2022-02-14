@@ -77,7 +77,7 @@ body {
 
 .OpenBars {
   font-size: 2rem;
-  text-shadow: 2px 2px #000;
+
   cursor: pointer;
   color: #fff;
 }
@@ -95,26 +95,33 @@ body {
 .welcomeText {
   padding-top: 2rem;
   padding-bottom: 1rem;
-  font-family: Rancho, serif;
+  font-family: Roboto, serif;
   font-wieght: bold;
   border-radius: 0 0 15px 15px;
   background-image: linear-gradient(
     180deg,
+    rgba(0, 0, 0, 0.1),
     rgba(0, 0, 0, 0.3),
     rgba(0, 0, 0, 0.6),
     rgba(0, 0, 0, 0.9)
   );
-  box-shadow: 1px 1px 10px rgba(235, 169, 55, 0.6);
+  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.6);
 }
 
 @media screen and (min-width: 600px) {
   .welcomeText {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
 
 @media screen and (max-width: 600px) {
   .welcomeText {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
+}
+
+.colorLogo {
+  width: 11rem;
+  background-color: #111;
+  border-radius: 10rem;
 }
