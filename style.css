@@ -64,10 +64,12 @@ body {
 }
 
 .gradientBG {
+  background: transparent;
   background-image: linear-gradient(
     180deg,
-    rgba(8, 146, 208, 0.3),
-    rgba(8, 146, 208, 0.6)
+    rgba(8, 146, 208, 0.4),
+    rgba(8, 146, 208, 0.8),
+    rgba(8, 146, 208, 1)
   );
   padding: 1rem;
   border-radius: 0 0 15px 15px;
@@ -125,4 +127,11 @@ body {
   width: 11rem;
   background-color: #111;
   border-radius: 10rem;
+}
+
+footer {
+  border-radius: 15px 15px 0 0;
+}
+.footerHR {
+  border-top: 2px solid #fff;
 }
