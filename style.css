@@ -21,7 +21,7 @@ body {
   font-size: 25px;
   color: #818181;
   display: block;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .sidenav a:hover {
@@ -93,9 +93,18 @@ body {
 }
 
 .welcomeText {
-  padding-top: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
   font-family: Rancho, serif;
   font-wieght: bold;
+  border-radius: 0 0 15px 15px;
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.9)
+  );
+  box-shadow: 1px 1px 10px rgba(235, 169, 55, 0.6);
 }
 
 @media screen and (min-width: 600px) {
@@ -106,6 +115,6 @@ body {
 
 @media screen and (max-width: 600px) {
   .welcomeText {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 }
