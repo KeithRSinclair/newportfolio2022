@@ -57,9 +57,6 @@ body {
   .headerText {
     font-size: 1rem;
   }
-  .OpenBars {
-    font-size: 1.5rem;
-  }
 }
 
 .myLogo {
@@ -95,6 +92,30 @@ body {
   text-shadow: 2px 2px #000;
 }
 
-.carouselModal {
-  top: 4rem;
+.welcomeText {
+  padding-top: 1rem;
+  font-family: Impact, Helvetica, sans-serif;
+  font-wieght: bold;
+  -webkit-text-stroke: 1px black;
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.6),
+    rgba(0, 0, 0, 0.8)
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.1rem;
+}
+
+@media screen and (min-width: 600px) {
+  .welcomeText {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .welcomeText {
+    font-size: 1.5rem;
+  }
 }
