@@ -135,3 +135,7 @@ footer {
 .footerHR {
   border-top: 2px solid #fff;
 }
+
+.emailFooter {
+  color: #fff;
+}
