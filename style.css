@@ -45,7 +45,7 @@ body {
   }
 }
 
-//Change Header Text and Icon Size
+//Change Header Text
 
 @media screen and (min-width: 600px) {
   .headerText {
@@ -93,4 +93,8 @@ body {
   font-family: Roboto, Helvetica, sans-serif;
   font-wieght: bold;
   text-shadow: 2px 2px #000;
+}
+
+.carouselModal {
+  top: 4rem;
 }
