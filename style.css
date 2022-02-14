@@ -139,3 +139,33 @@ footer {
 .emailFooter {
   color: #fff;
 }
+
+.emailFooter:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.socialIconsWA {
+  font-size: 30px;
+  color: #25d366;
+}
+
+.socialIconsEM {
+  font-size: 30px;
+  color: yellow;
+}
+
+.socialIconsLI {
+  font-size: 30px;
+  color: #0077b5;
+}
+
+.socialIconsGH {
+  font-size: 30px;
+  color: black;
+}
+
+.socialIconsGM {
+  font-size: 30px;
+  color: red;
+}
