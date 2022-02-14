@@ -94,28 +94,18 @@ body {
 
 .welcomeText {
   padding-top: 1rem;
-  font-family: Impact, serif;
+  font-family: Rancho, serif;
   font-wieght: bold;
-  -webkit-text-stroke: 1px black;
-  background-image: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.6),
-    rgba(0, 0, 0, 0.8)
-  );
-  -webkit-background-clip: text;
-  color: transparent;
-  letter-spacing: 0.1rem;
 }
 
 @media screen and (min-width: 600px) {
   .welcomeText {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 }
 
 @media screen and (max-width: 600px) {
   .welcomeText {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 }
