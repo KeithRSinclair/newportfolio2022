@@ -22,13 +22,13 @@
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a href="#"><img class="myLogo" src="/images/logo.png" alt="Keith's face logo"></a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
+      <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;About Me</a>
+      <a href="#"><i class="fa fa-picture-o" aria-hidden="true"></i>&nbsp;Logos</a>
+      <a href="#"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;Technologies</a>
+      <a href="#"> <i class="fa fa-phone" aria-hidden="true"></i>&nbsp; Contact Me</a>
     </div>
 
-
+   
    <!-- Hamburger Menu and Header Text-->
     <div class="container-fluid gradientBG sticky-top" style="z-index:2 !important">
       <span class="OpenBars" onclick="openNav()">&nbsp; &#9776; </span>
@@ -38,7 +38,7 @@
     <!-- Introduction  -->
     <div class="container-fluid text-center">
       <h2 class="welcomeText font-effect-3d text-center">Welcome to my Portfolio App!</h2>
-      <p>This Web Application is to showcase all the skills I have acquired and all the things I have an interest in. Keep scrolling down or use the side bar menu &#9776; to jump to a specific area of interest.</p>
+      <p class="lead pt-3">This Web Application is to showcase all the skills I have acquired and all the things I have an interest in. Keep scrolling down or use the side bar menu <span class="OpenBars" style="font-size: 1rem;" onclick="openNav()">&#9776; </span> to jump to a specific area of interest.</p>
     </div>
     
     <!-- About Me -->
@@ -46,7 +46,8 @@
       <div class="text-center">
         <h1>About Me</h1>
         <img class="img-fluid colorLogo" src="/images/colorLogo.png" alt="My Color Logo">
-        <p>This Web Application is to showcase all the skills I have acquired and all the things I have an interest in. Keep scrolling down or use the side bar menu to jump to a specific area of interest.</p>
+        <p class="lead pt-3">I think of myself as very curious and can't be content with simple explanations, I always dig deeper to understand things to the best of my abilities. Some people refre to it as<mark><strong>"Going down Rabbit holes"</strong></mark>  I just refer to it as research <i class="fa fa-smile-o" ></i></p>
+        <p class="lead pt-3">I enjoy using Inkscape to create Logo's for all the Web apps I create</p>
       </div>
       
       
@@ -59,5 +60,8 @@
 
     <!-- Bootstrap CDN -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- FontAwesome CDN -->
+    <script src="https://kit.fontawesome.com/a9f59815a3.js" crossorigin="anonymous"></script>
   </body>
 </html>
