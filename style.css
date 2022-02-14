@@ -94,7 +94,7 @@ body {
 
 .welcomeText {
   padding-top: 1rem;
-  font-family: Impact, Helvetica, sans-serif;
+  font-family: Impact, serif;
   font-wieght: bold;
   -webkit-text-stroke: 1px black;
   background-image: linear-gradient(
