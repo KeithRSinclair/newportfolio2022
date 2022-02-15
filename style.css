@@ -131,6 +131,7 @@ body {
 
 footer {
   border-radius: 15px 15px 0 0;
+  padding-top: 0.5rem;
 }
 .footerHR {
   border-top: 2px solid #fff;
@@ -173,4 +174,16 @@ footer {
 .socialIconsGMap {
   font-size: 30px;
   color: grey;
+}
+
+.techImages {
+  width: 8rem;
+  padding: 1rem;
+  max-width: 100%;
+}
+
+.cardbodyExtra {
+  background-color: #fff;
+  margin: 1rem;
+  border-radius: 15px;
 }
