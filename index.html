@@ -21,11 +21,11 @@
      <!-- Side NavBar -->
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="#"><img class="myLogo" src="/images/logo.png" alt="Keith's face logo"></a>
-      <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;About Me</a>
-      <a href="#"><i class="fa fa-picture-o" aria-hidden="true"></i>&nbsp;Logos</a>
-      <a href="#"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;Technologies</a>
-      <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp; Contact Me</a>
+      <a href="/" onclick="closeNav()"><img class="myLogo" src="/images/logo.png" alt="Keith's face logo"></a>
+      <a href="/#aboutME" onclick="closeNav()"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;About Me</a>
+      <!-- <a href="#"><i class="fa fa-picture-o" aria-hidden="true"></i>&nbsp;Logos</a> -->
+      <a href="#technologies" onclick="closeNav()"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;Technologies</a>
+      <a href="#contactME" onclick="closeNav()"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp; Contact Me</a>
     </div>
 
    
@@ -42,12 +42,12 @@
     </div>
     
     <!-- About Me -->
-    <div class="container-fluid">
+    <div class="container-fluid" id="aboutME">
       <div class="text-center">
         <h1><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;About Me</h1>
         <img class="img-fluid colorLogo" src="/images/colorLogo.png" alt="My Color Logo">
         <p class="lead pt-3">I think of myself as very curious and can't be content with simple explanations, I always dig deeper to understand things to the best of my abilities. Some people refer to it as<strong>"Going down Rabbit holes"</strong>  I just refer to it as research <i class="fa fa-smile-o" ></i>.</p>
-        <p class="lead">I also know that there is a solution for every problem and I refer to myseldf as a problem solver<blockquote class="blockquote">
+        <p class="lead">I also know that there is a solution for every problem and I refer to myself as a problem solver<blockquote class="blockquote">
           <p class="mb-0"><mark><i class="fa fa-quote-left" aria-hidden="true"></i>It’s not that I’m so smart,<br> it’s just that I stay with the problems longer.<i class="fa fa-quote-right" aria-hidden="true"></i></mark><br>
             <p class="font-italic">― Albert Einstein</p> </p>
         </blockquote></p>
@@ -56,7 +56,7 @@
     </div>
 
       <!-- Web Technologies I use-->
-      <div class="container-fluid">
+      <div class="container-fluid" id="technologies">
         <div class="text-center">
           <h1><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;Web Technologies I Use</h1>
           <div class="card-group">
@@ -88,7 +88,7 @@
       
       <!-- Contact Me -->
       <!--- Footer -->
-    <footer class="text-white bg-dark">
+    <footer class="text-white bg-dark" id="contactME">
       <h2 class="text-center "><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;Contact Me</h2>
       <div class="container-fluid">
         <div class="row text-center">
