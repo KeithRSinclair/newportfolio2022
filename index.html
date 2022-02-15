@@ -32,7 +32,7 @@
    <!-- Hamburger Menu and Header Text-->
     <div class="container-fluid gradientBG sticky-top" style="z-index:2 !important">
       <span class="OpenBars" onclick="openNav()">&nbsp; &#9776; </span>
-            <div class="float-right "><h4 class="headerText ">Keith Sinclair's Portfolio</h4></div>
+            <div class="float-right "><a href="/" class="noHover"><h4 class="headerText ">Keith Sinclair's Portfolio</h4></a></div>
     </div> 
     
     <!-- Introduction  -->
@@ -40,6 +40,9 @@
       <h2 class="welcomeText font-effect-3d text-center">Welcome to my Portfolio App!</h2>
       <p class="lead pt-3">This Web Application is to showcase all the skills I have acquired and all the things I have an interest in. Keep scrolling down or use the side bar menu <span class="OpenBars" style="font-size: 1rem;" onclick="openNav()">&#9776; </span> to jump to a specific area of interest.</p>
     </div>
+
+    <!-- back to top button  -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-hand-o-up" aria-hidden="true" style="font-size:30px;"></i><br>Back to Top</button>
     
     <!-- About Me -->
     <div class="container-fluid" id="aboutME">
@@ -64,15 +67,14 @@
               <img class="card-img-top techImages img-fluid mx-auto" src="/images/html5.png">
               <div class="card-body">
                 <h5 class="card-title">HTML 5</h5>
-                <p class="card-text">HTML 5 the staple of every Web Developer. If it wasn't for HTML I wouldn't know where to put things &nbsp;<i class="fa fa-smile-o" style="color:orangered" ></i></p>
-                
+                <p class="card-text">HTML 5 the staple of every Web Developer. If it wasn't for HTML I wouldn't know where to put things &nbsp;<i class="fa fa-smile-o" style="color:orangered" ></i></p>                
               </div>
             </div>
             <div class="card cardbodyExtra">
               <img class="card-img-top techImages img-fluid mx-auto" src="/images/css3.png" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">CSS 3</h5>
-                <p class="card-text">To make pretty or not to? That is the CSS 3 question. I find myself lost in this often, always trying to find the best transition or color to display &nbsp;<i class="fa fa-smile-o" style="color:blue" ></i></p>                
+                <p class="card-text">To make pretty or not to? That is the CSS question. I find myself lost in this often, always trying to find the best transition or color to display &nbsp;<i class="fa fa-smile-o" style="color:blue" ></i></p>                
               </div>
             </div>
             <div class="card cardbodyExtra">
@@ -80,6 +82,30 @@
               <div class="card-body">
                 <h5 class="card-title">JavaScript</h5>
                 <p class="card-text">The gearbox or inner workings of the World Wide Web &nbsp;<i class="fa fa-smile-o" style="color: #e1ad01" ></i></p>                
+              </div>
+            </div>
+          </div>
+          <!-- Second Row -->
+          <div class="card-group">
+            <div class="card cardbodyExtra">
+              <img class="card-img-top techImages img-fluid mx-auto" src="/images/Bootstrap.png">
+              <div class="card-body">
+                <h5 class="card-title">Bootstrap</h5>
+                <p class="card-text">Making things mobile friendly, I absolutely <i class="fa fa-heart" aria-hidden="true" style="color:red;"></i> this library &nbsp;<i class="fa fa-smile-o" style="color:purple" ></i></p>                
+              </div>
+            </div>
+            <div class="card cardbodyExtra">
+              <img class="card-img-top techImages img-fluid mx-auto" src="/images/jQuery.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">jQuery</h5>
+                <p class="card-text">This helps me leverage JavaScript like a professional &nbsp;<i class="fa fa-smile-o" style="color:blue" ></i></p>                
+              </div>
+            </div>
+            <div class="card cardbodyExtra">
+              <img class="card-img-top techImages img-fluid mx-auto" src="/images/React.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">React</h5>
+                <p class="card-text">I fell in <i class="fa fa-heart" aria-hidden="true" style="color:red;"></i> with this library &nbsp;<i class="fa fa-smile-o" style="color: #61dbfb" ></i></p>                
               </div>
             </div>
           </div>
