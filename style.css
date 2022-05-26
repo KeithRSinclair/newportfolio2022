@@ -218,3 +218,24 @@ footer {
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
 }
+
+.myProjectsList {
+  text-decoration: none;
+  color: black;
+  font-wieght: bold;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+
+.JSLogo {
+  width: 1.1rem;
+  padding-bottom: 0.5rem;
+}
+
+.myProjectsLogos {
+  width: 3.6rem;
+}
+
+.myReactLogo {
+  width: 2.6rem;
+}
