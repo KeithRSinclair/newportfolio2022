@@ -36,94 +36,27 @@ body {
   margin-left: 50px;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-  .sidenav a {
-    font-size: 18px;
-  }
-}
-
-//Change Header Text
-
-@media screen and (min-width: 600px) {
-  .headerText {
-    font-size: 1.5rem;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .headerText {
-    font-size: 1rem;
-  }
-}
-
 .myLogo {
-  width: 5rem;
+  width: 4rem;
+  margin-right: 6rem;
 }
 
 .gradientBG {
-  background: transparent;
-  background-image: linear-gradient(
-    180deg,
-    rgba(8, 146, 208, 0.4),
-    rgba(8, 146, 208, 0.8),
-    rgba(8, 146, 208, 1)
-  );
+  background: #000;
+  height: 7rem;
   padding: 1rem;
   border-radius: 0 0 15px 15px;
-  box-shadow: 1px 1px 10px rgba(0, 0, 139, 0.6),
-    1px 1px 1px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 1px 1px 10px rgba(0, 0, 139, 0.6);
 }
 
 .OpenBars {
   font-size: 2rem;
-
   cursor: pointer;
   color: #fff;
 }
 
-.headerText {
-  position: relative;
-  top: 0.5rem;
-  padding: 0.5rem;
-  color: #fff;
-  font-family: Roboto, Helvetica, sans-serif;
-  font-wieght: bold;
-  text-shadow: 2px 2px #000;
-}
 .noHover:hover {
   text-decoration: none;
-}
-
-.welcomeText {
-  padding-top: 0.8rem;
-  padding-bottom: 1rem;
-  font-family: Roboto, serif;
-  font-wieght: bold;
-  border-radius: 0 0 15px 15px;
-  background-image: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.1),
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.6),
-    rgba(0, 0, 0, 0.7),
-    rgba(0, 0, 0, 0.9)
-  );
-  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.6);
-}
-
-@media screen and (min-width: 600px) {
-  .welcomeText {
-    font-size: 4rem;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .welcomeText {
-    font-size: 1.2rem;
-  }
 }
 
 .colorLogo {
@@ -179,16 +112,15 @@ footer {
   color: grey;
 }
 
-.techImages {
-  width: 8rem;
-  padding: 1rem;
-  max-width: 100%;
+.socialIconsSF {
+  width: 1.9rem;
 }
 
 .cardbodyExtra {
   background-color: #fff;
-  margin: 1rem;
+  margin: 0.5rem;
   border-radius: 15px;
+  box-shadow: 0 0 5px #000;
 }
 
 #myBtn {
@@ -199,12 +131,7 @@ footer {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-image: linear-gradient(
-    180deg,
-    rgba(8, 146, 208, 0.4),
-    rgba(8, 146, 208, 0.8),
-    rgba(8, 146, 208, 1)
-  );
+  background-color: #000;
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 0.5rem; /* Some padding */
@@ -212,7 +139,6 @@ footer {
   font-size: 1rem; /* Increase font size */
   font-family: Roboto, Helvetica, sans-serif;
   font-wieght: bold;
-  text-shadow: 2px 2px #000;
 }
 
 #myBtn:hover {
@@ -233,9 +159,10 @@ footer {
 }
 
 .myProjectsLogos {
-  width: 3.6rem;
+  width: 5rem;
+  padding-top: 1rem;
 }
 
 .myReactLogo {
-  width: 2.6rem;
+  width: 4rem;
 }

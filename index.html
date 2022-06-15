@@ -29,12 +29,12 @@
 
      <!-- Side NavBar -->
     <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="/" onclick="closeNav()"><img class="myLogo" src="/images/logo.png" alt="Keith's face logo"></a>
-      <a href="/#aboutME" onclick="closeNav()"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;About Me</a>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+      <br>
       <a href="/#myProjects" onclick="closeNav()"><i class="fa fa-cubes" aria-hidden="true"></i>&nbsp;My Projects</a>
-      <!-- <a href="#"><i class="fa fa-picture-o" aria-hidden="true"></i>&nbsp;Logos</a> -->
-      <a href="#technologies" onclick="closeNav()"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;Technologies</a>
+      <br>  
+      <a href="/#aboutME" onclick="closeNav()"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;About Me</a>
+      <br>     
       <a href="#contactME" onclick="closeNav()"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp; Contact Me</a>
     </div>
 
@@ -42,121 +42,101 @@
    <!-- Hamburger Menu and Header Text-->
     <div class="container-fluid gradientBG sticky-top" style="z-index:2 !important">
       <span class="OpenBars" onclick="openNav()">&nbsp; &#9776; </span>
-            <div class="float-right "><a href="/" class="noHover"><h4 class="headerText ">Keith Sinclair's Portfolio</h4></a></div>
+      
+            <div class="float-right "><a href="/" onclick="closeNav()"><a href="/" class="noHover"><img class="myLogo" src="/images/logo.png" alt="Keith's face logo"></a></div>
     </div> 
     
     <!-- Introduction  -->
     <div class="container-fluid text-center">
-      <h2 class="welcomeText font-effect-3d text-center">Welcome to my Portfolio App!</h2>
-      <p class="lead pt-3">This Web Application is to showcase all the skills I have acquired and all the things I have an interest in. Keep scrolling down or use the side bar menu <span class="OpenBars" style="font-size: 1rem;" onclick="openNav()">&#9776; </span> to jump to a specific area of interest.</p>
+      
+      <p class="lead pt-3">Welcome to my Portfolio App.This Web Application is to showcase all the skills I have acquired and all the things I have an interest in. Keep scrolling down or use the side bar menu <span class="OpenBars" style="font-size: 1rem;" onclick="openNav()">&#9776; </span> to jump to a specific area of interest.</p>
     </div>
 
     <!-- back to top button  -->
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-hand-o-up" aria-hidden="true" style="font-size:30px;"></i><br>Back to Top</button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-hand-o-up" aria-hidden="true" style="font-size:30px;"></i><br>Back to Top</button>         
     
-    <!-- About Me -->
+        
+      <!-- My Projects -->
+      <div class="container-fluid" id="myProjects" >
+        <div class="text-center">
+          <h1><i class="fa fa-cubes" aria-hidden="true"></i>&nbsp;My Projects</h1>
+          <p class="lead pt-3 text-center" > A List of all my web apps, they are hosted on various hosting platforms like Heroku, Netlify and Github Pages.</p>
+          <div class="card-deck">
+             <!-- First Web App -->             
+            <div class="card cardbodyExtra">
+              <div class="text-center"><img src="/images/sinclairgames.svg" alt="SinclairGamesLogo" class="myProjectsLogos"></div>
+              <div class="card-body">
+                <h5 class="card-title">My First Web App </h5>
+                <p class="card-text">This is my very first project ever, Its made using HTML5 <i class="fa fa-html5" aria-hidden="true"></i> , CSS3 <i class="fa fa-css3" aria-hidden="true"></i> and Vanilla JavaScript <img src="/images/js-brands.svg" alt="JavascriptLogo" class="JSLogo">. It's a mock up of a Video Game Store. This was also my first attempt at making my own logos.</p>  
+                <a href="https://keithrsinclair.github.io/firstweb/" class="btn btn-outline-dark" target="blank" >My First Web App </a>              
+              </div>
+            </div>
+          
+            <!-- Address Book App -->            
+            <div class="card cardbodyExtra">
+              <div class="text-center"><img src="/images/addresslogo.svg" alt="SinclairGamesLogo" class="myProjectsLogos"></div>
+              <div class="card-body">
+                <h5 class="card-title">Address Book App </h5>
+                <p class="card-text">This app was made using Python <i class="fab fa-python"></i> and Django <img src="/images/django.svg" alt="Django Icon" class="JSLogo">. It's used to store people's information. Please note it takes a while to spin up because it's on shared hosting on Heroku <img src="/images/heroku.svg" alt="Heroku Icon" class="JSLogo" >.</p>  
+                <a href="https://keithsaddressbook.herokuapp.com/" class="btn btn-outline-dark" target="blank" >Address Book App </a>              
+              </div>
+            </div>
+         
+            <!-- E-Com Store App -->            
+            <div class="card cardbodyExtra">
+              <div class="text-center"><img src="/images/mobileshop.svg" alt="SinclairGamesLogo" class="myProjectsLogos"></div>
+              <div class="card-body">
+                <h5 class="card-title">E-Com Store App </h5>
+                <p class="card-text">A quick rag tag E-com store app made using React <i class="fab fa-react"></i> and integrated with PayPal <i class="fab fa-paypal"></i> hosted on Netlify <img src="/images/netlify.svg" alt="Netlify Icon" class="JSLogo">. The Pay Pal is in a Sandbox environment and if you would like to try it out, drop me an e-mail <i class="fas fa-envelope"></i> and I will send you the login details.</p>  
+                <a href="https://keithsinclair-react-ecom-store.netlify.app/" class="btn btn-outline-dark" target="blank" >E-Com Store App </a>              
+              </div>
+            </div>
+          </div>
+       
+          <!-- Second Row -->
+          <div class="card-deck">
+            <!-- Movie App -->
+           <div class="card cardbodyExtra">
+             <div class="text-center"><img src="/images/movieapp.svg" alt="SinclairGamesLogo" class="myProjectsLogos"></div>
+             <div class="card-body">
+               <h5 class="card-title">A Movie App </h5>
+               <p class="card-text">A React <i class="fab fa-react"></i> app that plugs into The Movie DB API. It pulls through all the data on the movie. Hosted on Netlify <img src="/images/netlify.svg" alt="Netlify Icon" class="JSLogo">.</p>  
+               <a href="https://keithsmovieapp.netlify.app/" class="btn btn-outline-dark" target="blank" >A Movie App </a>              
+             </div>
+           </div>
+           <!-- React Portfolio App -->
+           <div class="card cardbodyExtra">
+             <div class="text-center"><img src="/images/logo.png" alt="SinclairGamesLogo" class="myReactLogo"></div>
+             <div class="card-body">
+               <h5 class="card-title">React.js Portfolio App</h5>
+               <p class="card-text">I made this Portfolio app using React <i class="fab fa-react"></i>. It has a Sanity.io back end and uses the Email.js plugin to receive e-mails directly to my Gmail account. It is hosted on Netlify <img src="/images/netlify.svg" alt="Netlify Icon" class="JSLogo">.</p>  
+               <a href="https://keithsportfolio.netlify.app/" class="btn btn-outline-dark" target="blank" >My First Web App </a>              
+             </div>
+           </div>
+            <!-- Earth and Moon App -->
+           <div class="card cardbodyExtra">
+             <div class="text-center"><img src="/images/earthandmoon.svg" alt="SinclairGamesLogo" class="myProjectsLogos"></div>
+             <div class="card-body">
+               <h5 class="card-title">Earth and Moon </h5>
+               <p class="card-text">I have recently started learning the Three.js <img src="/images/Threejs.svg" alt="Three.js Icon" class="JSLogo"> Library. It's used to display 3D objects leveraging the WebGL standard. Code to make 3D graphics<i class="fa fa-heart" aria-hidden="true" style="color:red;"></i>!!</p>  
+               <a href="https://keithrsinclair.github.io/EarthandMoon/" class="btn btn-outline-dark" target="blank" >Earth and Moon </a>              
+             </div>
+           </div>
+         </div> 
+        </div>
+      </div>
+      <br>
+      <!-- About Me -->
     <div class="container-fluid" id="aboutME">
       <div class="text-center">
         <h1><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;About Me</h1>
         <img class="img-fluid colorLogo" src="/images/colorLogo.png" alt="My Color Logo">
-        <p class="lead pt-3">I think of myself as very curious and can't be content with simple explanations, I always dig deeper to understand things to the best of my abilities. Some people refer to it as<strong>"Going down Rabbit holes"</strong>  I just refer to it as research <i class="far fa-smile-beam" ></i>.</p>
-        <p class="lead">I also know that there is a solution for every problem and I refer to myself as a problem solver<blockquote class="blockquote">
-          <p class="mb-0"><mark><i class="fa fa-quote-left" aria-hidden="true"></i>It’s not that I’m so smart,<br> it’s just that I stay with the problems longer.<i class="fa fa-quote-right" aria-hidden="true"></i></mark><br>
-            <p class="font-italic">― Albert Einstein</p> </p>
-        </blockquote></p>
-        <p class="lead pt-3">I enjoy using Inkscape to create Logo's for all the Web apps I create. I have also "logofied" myself with a black and white logo and a colour logo which I am using on this very site</p>
-        <p class="lead pt-3">I also enjoy 3D Modelling using Blender <img src="/images/blender.svg" alt="Blender Icon" class="JSLogo">, to check out my Blender projects check out my Sketchfab <img src="/images/sketchfab.svg" alt="Sketchfab Icon" class="JSLogo"> page here -> <a href="https://sketchfab.com/codekeithcode" target="blank" type="button" class="btn btn-outline-primary">Keith's Sketchfab Page</a></p>        
+        <p class="lead pt-3"></p>
+        <p class="lead pt-3">I enjoy using Inkscape to create Logo's for all the Web apps I create. I have also "logofied" myself with a black and white logo and a colour logo which I am using on this very site.</p>
+        <p class="lead pt-3">I also enjoy 3D Modelling using Blender <img src="/images/blender.svg" alt="Blender Icon" class="JSLogo">, to check out my Blender projects check out my Sketchfab <img src="/images/sketchfab.svg" alt="Sketchfab Icon" class="JSLogo"> page here -> <a href="https://sketchfab.com/codekeithcode" target="blank" type="button" class="btn btn-outline-dark">Keith's Sketchfab Page</a></p>        
       </div>
     </div>
     <br>
-
-    <!-- My Projects -->
-    <div class="container-fluid" id="myProjects">
-      <div class="text-center">
-        <h1><i class="fa fa-cubes" aria-hidden="true"></i>&nbsp;My Projects</h1>
-      </div>
-      <p class="lead pt-3 text-center" > A List of all my web apps, they are hosted on various hosting platforms like Heroku, Netlify and Github Pages. To check them out click on the heading or the button.</p>
-        <ul class="fa-ul">
-          <!-- First Web App -->
-          <li ><span class="fa-li"><i class="fa fa-cube" aria-hidden="true"></i></span><a href="https://keithrsinclair.github.io/firstweb/" target="blank" class="myProjectsList">My First Web App <img src="/images/sinclairgames.svg" alt="SinclairGamesLogo" class="myProjectsLogos"></a></li>
-          <p>This is my very first project ever, Its made using HTML5 <i class="fa fa-html5" aria-hidden="true"></i> , CSS3 <i class="fa fa-css3" aria-hidden="true"></i> and Vanilla JavaScript <img src="/images/js-brands.svg" alt="JavascriptLogo" class="JSLogo">. It's a mock up of a Video Game Store. This was also my first attempt at making my own logos. To check it out click here <a href="https://keithrsinclair.github.io/firstweb/" target="blank" type="button" class="btn btn-success">My First Web App </a>  </p>  
-
-          <!-- Address Book App -->
-          <li><span class="fa-li"><i class="fa fa-cube" aria-hidden="true"></i></span><a href="https://keithsaddressbook.herokuapp.com/" target="blank" class="myProjectsList">Address Book App <img src="/images/addresslogo.svg" alt="AddressBookLogo" class="myProjectsLogos"></a></li>
-          <p>This app was made using Python <i class="fab fa-python"></i> and Django <img src="/images/django.svg" alt="Django Icon" class="JSLogo">, it takes a while to spin up because it's on shared hosting on Heroku <img src="/images/heroku.svg" alt="Heroku Icon" class="JSLogo" >. You can check it out here <a href="https://keithsaddressbook.herokuapp.com/" target="blank" type="button" class="btn btn-warning">Address Book App </a> </p>
-          
-
-          <!-- E-Com Store App -->
-          <li><span class="fa-li"><i class="fa fa-cube" aria-hidden="true"></i></span><a href="https://keithsinclair-react-ecom-store.netlify.app/" target="blank" class="myProjectsList">E-Com Store App <img src="/images/mobileshop.svg" alt="Ecom Logo" class="myProjectsLogos"></a></li>
-          <p>A quick rag tag E-com store app made using React <i class="fab fa-react"></i> and integrated with PayPal <i class="fab fa-paypal"></i> hosted on Netlify <img src="/images/netlify.svg" alt="Netlify Icon" class="JSLogo">. The Pay Pal is in a Sandbox environment and if you would like to try it out, drop me an e-mail <i class="fas fa-envelope"></i> and I will send you the login details. To take it for a spin click here <a href="https://keithsinclair-react-ecom-store.netlify.app/" target="blank" type="button" class="btn btn-primary">E-Com Store App </a></p>
-
-          <!-- Movie App -->
-          <li><span class="fa-li"><i class="fa fa-cube" aria-hidden="true"></i></span><a href="https://keithsmovieapp.netlify.app/" target="blank" class="myProjectsList">A Movie App <img src="/images/movieapp.svg" alt="MovieAppLogo" class="myProjectsLogos"class="myProjectsLogos"></a></li>
-          <p>A React <i class="fab fa-react"></i> app that plugs into The Movie DB API hosted on Netlify <img src="/images/netlify.svg" alt="Netlify Icon" class="JSLogo">. You can view it here <a href="https://keithsmovieapp.netlify.app/" target="blank" type="button" class="btn btn-secondary">A Movie App </a></p>
-
-          <!-- React Portfolio App -->
-          <li><span class="fa-li"><i class="fa fa-cube" aria-hidden="true"></i></span><a href="https://keithsportfolio.netlify.app/" target="blank" class="myProjectsList">React.js Portfolio App <img src="/images/logo.png" alt="ReactPortFolioLogo" class="myReactLogo"></a></li>
-          <p>I made this Portfolio app using React <i class="fab fa-react"></i>. It has a Sanity.io back end and uses the Email.js plugin to receive e-mails directly to my Gmail account. It is hosted on Netlify <img src="/images/netlify.svg" alt="Netlify Icon" class="JSLogo">. To check if it's better than my current Portfolio site, take a look at it here <a href="https://keithsportfolio.netlify.app/" target="blank" type="button" class="btn btn-dark">React.js Portfolio App</a> </p>
-
-          <!-- Earth and Moon App -->
-          <li><span class="fa-li"><i class="fa fa-cube" aria-hidden="true"></i></span><a href="https://keithrsinclair.github.io/EarthandMoon/" target="blank" class="myProjectsList">Earth and Moon <img src="/images/earthandmoon.svg" alt="EarthandMoonLogo" class="myProjectsLogos"> </a></li> 
-          <p>I have recently started learning the Three.js <img src="/images/Threejs.svg" alt="Three.js Icon" class="JSLogo"> Library. It's used to display 3D objects leveraging the WebGL standard. Code to make 3D graphics<i class="fa fa-heart" aria-hidden="true" style="color:red;"></i>!! Have a look at it here <a href="https://keithrsinclair.github.io/EarthandMoon/" target="blank" type="button" class="btn btn-light">Earth and Moon</a> </p>
-        </ul>
-    </div>
-
-      <!-- Web Technologies I use-->
-      <div class="container-fluid" id="technologies">
-        <div class="text-center">
-          <h1><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;Web Technologies I Use</h1>
-          <div class="card-group">
-            <div class="card cardbodyExtra">
-              <img class="card-img-top techImages img-fluid mx-auto" src="/images/html5.png">
-              <div class="card-body">
-                <h5 class="card-title">HTML 5</h5>
-                <p class="card-text">HTML 5 the staple of every Web Developer. If it wasn't for HTML I wouldn't know where to put things</p>                
-              </div>
-            </div>
-            <div class="card cardbodyExtra">
-              <img class="card-img-top techImages img-fluid mx-auto" src="/images/css3.png" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">CSS 3</h5>
-                <p class="card-text">To make pretty or not to? That is the CSS question. I find myself lost in this often, always trying to find the best transition or color to display </p>                
-              </div>
-            </div>
-            <div class="card cardbodyExtra">
-              <img class="card-img-top techImages img-fluid mx-auto" src="/images/JS.png" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">JavaScript</h5>
-                <p class="card-text">The gearbox or inner workings of the World Wide Web</p>                
-              </div>
-            </div>
-          </div>
-          <!-- Second Row -->
-          <div class="card-group">
-            <div class="card cardbodyExtra">
-              <img class="card-img-top techImages img-fluid mx-auto" src="/images/Bootstrap.png">
-              <div class="card-body">
-                <h5 class="card-title">Bootstrap</h5>
-                <p class="card-text">Making things mobile friendly, I absolutely <i class="fa fa-heart" aria-hidden="true" style="color:red;"></i> this library </p>                
-              </div>
-            </div>
-            <div class="card cardbodyExtra">
-              <img class="card-img-top techImages img-fluid mx-auto" src="/images/jQuery.png" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">jQuery</h5>
-                <p class="card-text">This helps me leverage JavaScript like a professional</p>                
-              </div>
-            </div>
-            <div class="card cardbodyExtra">
-              <img class="card-img-top techImages img-fluid mx-auto" src="/images/React.png" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">React</h5>
-                <p class="card-text">I fell in <i class="fa fa-heart" aria-hidden="true" style="color:red;"></i> with this library</p>                
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       
       <!-- Contact Me -->
       <!--- Footer -->
@@ -191,6 +171,7 @@
             <hr class="footerHR" />
             <p><i class="fa fa-linkedin-square socialIconsLI" aria-hidden="true"></i>&nbsp;<a class="emailFooter" href="https://www.linkedin.com/in/keith-sinclair-b25b93135/" target="_blank">My LinkedIn Profile</a></p>  
             <p><i class="fa fa-github-alt socialIconsGH" aria-hidden="true"></i>&nbsp;<a class="emailFooter" href="https://github.com/KeithRSinclair" target="_blank">My Github Profile</a></p>
+            <p><img src="/images/sketchfab1.svg" alt="Sketchfab Icon" class="socialIconsSF"></i>&nbsp;<a class="emailFooter" href="https://sketchfab.com/codekeithcode" target="_blank">My Sketchfab Page</a></p>
           </div>
           <div class="col-12">
             <hr class="footerHR" />
