@@ -61,8 +61,32 @@ body {
 
 .colorLogo {
   width: 11rem;
-  background-color: #111;
+  background: linear-gradient(
+    160deg,
+    #324ab2,
+    rgba(255, 255, 255, 0.6),
+    rgba(0, 0, 139, 0.6),
+    #324ab2,
+    #fff,
+    rgba(0, 0, 139, 0.6)
+  );
+  background-size: 200% 100%;
+  animation: BackgroundGradient 4s ease infinite;
   border-radius: 10rem;
+}
+
+@keyframes BackgroundGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 footer {
