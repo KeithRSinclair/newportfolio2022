@@ -191,6 +191,10 @@ footer {
   width: 8rem;
   padding-top: 1rem;
 }
+.nuxtPortfolioLogo {
+  width: 4rem;
+  padding-top: 1rem;
+}
 
 .myReactLogo {
   width: 4rem;
